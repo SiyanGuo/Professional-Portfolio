@@ -156,6 +156,18 @@ footer span {
 }
 
 /* my work section styling starts  */
+.icon:link, .icon:visited{
+  color: var(--light-grey);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.icon:hover {
+  color: var(--dark-grey);
+  text-decoration: none;
+  font-weight: bold;
+}
+
 .demos {
   display: flex;
   flex-wrap: wrap;
@@ -170,11 +182,21 @@ footer span {
   position: relative;
   background-size: cover;
   background-position: center;
-  box-shadow: inset 0 0 0 1000px rgba(170, 216, 211, 0.5);
+  box-shadow: inset 0 0 0 1000px rgba(170, 216, 211, 0.2);
 }
 
-.demo:hover {
-  box-shadow: inset 0 0 0 1000px rgba(170, 216, 211, 0.2);
+
+.hide {
+  visibility: hidden;
+}
+
+/* .demo:hover {
+} */
+.work-text:hover+.hide{
+  visibility: visible;
+  color:(--dark-grey);
+  box-shadow: inset 0 0 0 1000px rgba(170, 216, 211, 0.9);
+
 }
 
 .work-text {
